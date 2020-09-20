@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+<link rel="stylesheet" href="/css/vitals.css">
+
+<head>
+  <title>Input Vitals</title>
+
+<body>
+
+  <form action="/vitals" method="POST">
+    <div class="container">
+      <h1>Vitals</h1>
+      <p>Measure and record your vitals here:</p>
+      <p>Make sure you rest for 5 MINUTES before measuring HEART RATE 💓and BLOOD PRESSURE 💪</p>
+      <p>After the initial measurement, recording height is optional for adults and can be measured every month for children aged 16 and under.</p>
+
+  </div>
+  <hr>
+<div class="container">
+<table style="width:50%">
+  <tr>
+    <th><label for="date"><b>Today's Date</b></label></th>
+    <td><input type="text" placeholder="MM/DD/YYYY" name="date" id="date"></td>
+  </tr>
+  <tr>
+    <th><label for="wt"><b>Current Weight</b></label></th>
+    <td><input type="text" placeholder="Enter Weight in kg" name="wt" id="wt"></td>
+  </tr>
+  <tr>
+    <th><label for="ht"><b>Current Height</b></label></th>
+    <td><input type="text" placeholder="Enter Height in cm" name="bday" id="bday"></td>
+  </tr>
+  <tr>
+    <th><label for="bpS"><b>Resting Blood Pressure</b></label></th>
+    <td><input type="text" placeholder="Systolic" name="bpS" id="bpS"></td>
+  <tr>
+    <th><label for="bpD"><b>    </b></label></th>
+    <td><input type="text" placeholder="Diastolic" name="bpD" id="bpD"></td>
+  </tr>
+  <tr>
+    <th><label for="hr"><b>Resting Heart Rate</b></label></th>
+    <td><input type="text" placeholder="Beats/Minute" name="hr" id="hr"></td>
+  </tr>
+</table>
+
+    <button onclick="buttonClick()" type="submit" class="registerbtn" id="inc" >Upload Vitals</button>
+        <button id="renderButton">Add DataPoint & Render</button>
+        <div id="chartContainer" style="height: 270px; width: 80%;">
+  </div>
+</body>
+</form>
+<!--
+<%        window.onload = function() {    %>
+  <%             var dps = []; //dataPoints.    %>
+
+    <%           var chart = new CanvasJS.Chart("chartContainer", {    %>
+  <%                 title: {    %>
+  <%                     text: "Accepting DataPoints from User Input"    %>
+<%                   },    %>
+  <%                 data: [{    %>
+  <%                     type: "line",    %>
+  <%                     dataPoints: dps    %>
+  <%                 }]    %>
+<%               });    %>
+
+  <%             function addDataPointsAndRender() {    %>
+    <%               xValue = Number(document.getElementById("xValue").value);    %>
+    <%               yValue = Number(document.getElementById("yValue").value);    %>
+  <%                 dps.push({    %>
+    <%                   x: xValue,    %>
+  <%                     y: yValue    %>
+<%                   });    %>
+    <%               chart.render();    %>
+  <%             }    %>
+
+    <%           var renderButton = document.getElementById("renderButton");    %>
+<%               renderButton.addEventListener("click", addDataPointsAndRender);    %>
+<%           }
+
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+    </html>

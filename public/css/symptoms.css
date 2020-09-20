@@ -1,0 +1,136 @@
+.container {
+  padding-left: 30%;
+  padding-right: 0%;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.container1 {
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+
+table, th, td {
+  border;
+  border-collapse: collapse;
+}
+th, td{
+  padding: 5px;
+  text-align: left;
+}
+
+/* Full-width input fields */
+input[type=text] {
+  width: 200px;
+  padding:10px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=ac] {
+  width: 400px;
+  height: 200px;
+  padding: 5px;
+  margin: 5px 0 22px 570px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=ac]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=d] {
+  width: 200px;
+  padding:10px;
+  margin: 0 0 30px 575px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=d]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #e65041;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+  color: #323232;
+  padding-left: 40%;
+  padding-right: 0%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+b {
+  font-family: 'Nunito', sans-serif;
+  font-size: 30px;
+  padding-left: 40%;
+  padding-right: 0%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Muli', sans-serif;
+  font-size: 36px;
+  color: #e65041;
+  padding-left: 20%;
+}
+
+body{
+  background-color:#c8e6fa;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 5px 0 0 550px;
+  border: none;
+  cursor: pointer;
+  width: 450px;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
